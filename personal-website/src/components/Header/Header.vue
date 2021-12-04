@@ -2,7 +2,7 @@
 <div>
     <div id="intro">Hi, I'm Sam</div>
     <div id="tabs">
-        <button class="tab">About Me</button>
+        <button @click="navigateToAboutMe()" class="tab">About Me</button>
         <button class="tab">Experience</button>
         <button class="tab">Projects</button>
     </div>
