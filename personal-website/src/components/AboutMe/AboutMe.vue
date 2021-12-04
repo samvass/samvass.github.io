@@ -3,9 +3,9 @@
     <!--ABOUT ME HEADER-->
     <div id="about-me">
 
+        <div class="btn">Education</div>
         <!--EDUCATION SECTION-->
-        <div class="section"> <button class="btn"> Education </button>
-
+        <div class="section"> 
             <!--MCGILL UNIVERSITY-->
             <div class="subsection">
 
@@ -53,15 +53,6 @@
             </div>
         </div>
 
-        <!--Interests SECTION-->
-        <div class="section"> <button class="btn"> Interests </button>
-            <!--MUSIC PRODUCTION-->
-            <div class="subsection">
-                Music Production
-                <div class="content"></div>
-            </div>
-        </div>
-
     </div>
 
 </div>
@@ -74,23 +65,22 @@
 
 .section {
     margin: 15px;
-    display: table-row;
+    display: flex;
+    justify-content: space-between;
 }
 
 #about-me{
     margin: 15px;
-    display: table;
 }
 
 .subsection {
     font-size: 20px;
-    display: table-cell;
-    margin: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .content {
     font-size: 15px;
-    display: table-row;
 }
 
 .btn {

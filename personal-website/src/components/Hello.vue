@@ -3,8 +3,8 @@
     <Header id="header"/>
     <div class="title">About Me</div>
     <AboutMe id="aboutme"/>
-    <div class="title">Experience</div>
-    <Experience id="experience" />
+    <div class="title">Projects</div>
+    <Projects id="projects" />
   </div>
 </template>
 
