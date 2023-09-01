@@ -1,0 +1,37 @@
+
+.header {
+    text-align: center;
+}
+
+.name {
+    padding: 20px;
+    font-size: 50px;
+}
+
+.title {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.info {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.icon:hover {
+    color: #456990;
+}
+
+a {
+    color:black;
+}
+
+
+a:visited {
+    color:black;
+}

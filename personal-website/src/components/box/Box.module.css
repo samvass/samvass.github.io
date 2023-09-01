@@ -1,0 +1,27 @@
+.box{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box:hover {
+    background-color: #456990;
+    color: white;
+    cursor: pointer;
+}
+
+.boxContent {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
