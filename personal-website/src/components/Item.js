@@ -1,18 +1,17 @@
 import React from 'react'
+import './Item.css'
 
 const Item = (props) => {
 
     const {image, imageLink,h1,h2,h3,h4,h5} = props
 
   return (
-    <div style={{display: 'flex', gap: '30px'}}>
+    <a className="item" href={imageLink} >
         <div>
-            <a href={imageLink}>
-                <img src={image} style={{width: '180px'}}></img>
-            </a>
+            <img src={image} style={{width: '180px', borderRadius: '20px'}}></img>
         </div>
 
-        <div>
+        <div style={{color: 'white'}}>
 
             <div style={{ fontSize: '30px', fontWeight: 'bold', marginBottom: '15px' }}>
                 {h1}
@@ -35,7 +34,7 @@ const Item = (props) => {
             </div>
 
         </div>
-    </div>
+    </a>
   )
 }
 

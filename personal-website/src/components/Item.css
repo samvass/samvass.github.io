@@ -1,0 +1,15 @@
+.item {
+    display: flex;
+    gap: 30px;
+    background-color: #456990;
+    padding: 20px;
+    border-radius: 20px;
+    height: 250px;
+    width: 800px;
+    margin-bottom: 70px;
+    text-decoration: none;
+}
+
+.item:hover {
+    background-color: #5686ba;
+}

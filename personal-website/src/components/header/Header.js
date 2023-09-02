@@ -26,7 +26,7 @@ const Header = () => {
                     <BsLinkedin size="40px" className={style.icon}/>
                 </a>
                 <a href="https://www.google.com">
-                    <BsGithub size="40px" className={style.icon}/>
+                <BsGithub size="40px" className={style.icon}/>
                 </a>
                 <a href="https://www.google.com">
                     <RiNewspaperFill size="40px" className={style.icon}/>
