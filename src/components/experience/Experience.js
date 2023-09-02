@@ -14,7 +14,7 @@ const Experience = () => {
 
         <div data-aos='slide-right' style={{ fontSize: '40px', fontWeight: 'bolder', marginBottom: '50px' }}>Experience</div>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
+        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '80px'}}>
 
         <Item image={novatek} imageLink="https://ntint.com/" h1="Software Engineering Intern" h2="Novatek International" h3="February 2021 - present (part-time)" h4="Montreal, Canada" />
 
@@ -28,7 +28,7 @@ const Experience = () => {
 
         </div>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
+        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '80px'}}>
 
         <Item image={deloitte} imageLink="https://www2.deloitte.com/ca/en/pages/consulting/articles/deloitte-canadian-delivery-centre.html" h1="Solutions Associate" h2="Deloitte (Canadian Delivery Centre)" h3="May 2022 - August 2022" h4="Montreal, Canada" />
 

@@ -14,13 +14,13 @@ const Education = () => {
     return (
         <div className={style.education}>
 
-        <div data-aos='slide-right' style={{ fontSize: '40px', fontWeight: 'bolder', marginBottom: '50px'}}>Education</div>
+        <div data-aos='slide-right' style={{ fontSize: '40px', fontWeight: 'bolder', marginBottom: '10px'}}>Education</div>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
+        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '80px'}}>
 
             <Item image={mcgill} imageLink="https://www.mcgill.ca/engineering/" h1="Bachelor of Software Engineering" h2="McGill University" h3="September 2020 - May 2024" h4="Montreal, Canada" h5="GPA: 3.95/4.0" />
 
-            <div style={{marginBottom: '70px'}}>
+            <div style={{marginBottom: '40px'}}>
                 <div style={{ marginBottom: '15px' , fontSize: '25px', fontWeight: '500'}}>Courses Taken</div>
                     <Box
                     sx={{ width: '100%', height: 200, maxWidth: 360, color: 'white'}}>
@@ -34,7 +34,7 @@ const Education = () => {
 
             <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
 
-              <Item image={dawson} imageLink="" h1="DEC of Health Sciences" h2="Dawson College" h3="September 2018 - May 2020" h4="Montreal, Canada" h5="R-Score: 36.4" />
+              <Item image={dawson} imageLink="https://www.dawsoncollege.qc.ca/about-dawson/" h1="DEC of Health Sciences" h2="Dawson College" h3="September 2018 - May 2020" h4="Montreal, Canada" h5="R-Score: 36.4" />
 
               </div>
 

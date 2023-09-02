@@ -12,12 +12,13 @@ import Cover from './components/Cover';
 import Projects from './components/projects/Projects'
 import Achievements from './components/achievements/Achievements'
 import { useState, useEffect } from 'react';
+import './App.css'
 
 
 function App() {
 
   const headshotStyle = {
-    width: '270px',
+    width: '200px',
     borderRadius: '10px'
   };
 
@@ -81,9 +82,10 @@ function App() {
               icon={<IoHammerSharp size='50px'/>}/>
             </div>
             <div onClick={() => {scrollToSection('achieve')}}>
-              <Box name="Awards" animation="up" delay="0"
+              <Box name="Achievements" animation="up" delay="0"
               icon={<BsAwardFill size='50px'/>}/>
             </div>
+            
         </div>
         <Cover/>
 
@@ -99,10 +101,12 @@ function App() {
         </div>
 
         <div id='proj'>
+          <br/>
           <Projects/>
         </div>
 
         <div id='achieve'>
+          <br/>
           <Achievements/>
         </div>
 

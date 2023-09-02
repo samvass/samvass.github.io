@@ -8,28 +8,28 @@ const Item = (props) => {
   return (
     <a className="item" href={imageLink} >
         <div>
-            <img src={image} style={{width: '180px', borderRadius: '20px'}}></img>
+            <img src={image} style={{width: '120px', borderRadius: '20px'}}></img>
         </div>
 
         <div style={{color: 'white'}}>
 
-            <div style={{ fontSize: '30px', fontWeight: 'bold', marginBottom: '15px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '12px' }}>
                 {h1}
             </div>
 
-            <div style={{ fontSize: '30px', fontWeight: '600', marginBottom: '15px' }}>
+            <div style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px' }}>
                 {h2}
             </div>
 
-            <div style={{fontSize:'25px', fontWeight: '600', marginBottom: '25px'}}>
+            <div style={{fontSize:'15px', fontWeight: '600', marginBottom: '20px'}}>
                 {h3}
             </div>
 
-            <div style={{ marginBottom: '15px' , fontSize: '25px'}}>
+            <div style={{ marginBottom: '12px' , fontSize: '15px'}}>
                 {h4}
             </div>
 
-            <div style={{ marginBottom: '5px', fontSize: '25px' }}>
+            <div style={{ marginBottom: '3px', fontSize: '15px' }}>
                 {h5}
             </div>
 

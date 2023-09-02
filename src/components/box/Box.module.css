@@ -1,7 +1,7 @@
 .box{
     background-color: black;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-top: 50px;
     margin-left: 30px;
     margin-right: 30px;
@@ -22,6 +22,6 @@
 .boxContent {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 }

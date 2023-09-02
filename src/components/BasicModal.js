@@ -25,7 +25,7 @@ export default function BasicModal(props) {
 
   return (
     <div>
-      <Button onClick={handleOpen} variant='contained' style={{backgroundColor: '#456990', width: '200px', height: '100px', fontSize: '20px'}}>{btnText}</Button>
+      <Button onClick={handleOpen} variant='contained' style={{backgroundColor: '#456990', width: '150px', height: '80px', fontSize: '15px',marginBottom: '40px'}}>{btnText}</Button>
       <Modal
         open={open}
         onClose={handleClose}

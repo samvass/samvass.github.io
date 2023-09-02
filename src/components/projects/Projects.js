@@ -15,7 +15,7 @@ const Experience = () => {
 
         <div data-aos='slide-right' style={{ fontSize: '40px', fontWeight: 'bolder', marginBottom: '50px'}}>Projects</div>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
+        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '50px'}}>
 
         <Item image={tamid} imageLink="https://tamidgroup.org/" h1="Director of Technology Consulting" h2="TAMID McGill" h3="Fall 2020 - present" h4="Montreal, Canada" />
 
@@ -23,15 +23,11 @@ const Experience = () => {
 
         </div>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
-                
-        </div>
+        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '50px'}}>
 
-        <div data-aos='slide-right' style={{display:'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '100px'}}>
+        <Item image={book} imageLink="https://github.com/samvass/BookClub" h1="Book Recommendation App (BookClub)" h2="McGill University" h3="January 2022 - May 2022" h4="Montreal, Canada" />
 
-        <Item image={book} imageLink="" h1="Book Recommendation App (BookClub)" h2="McGill University" h3="January 2022 - May 2022" h4="Montreal, Canada" />
-
-        <Item image={phys} imageLink="" h1="Physics Safe Cracking Competition" h2="Weizman Institute of Science" h3="March 2018" h4="Montreal, Canada" />
+        <Item image={phys} imageLink="https://www.weizmann.ca/" h1="Physics Safe Cracking Competition" h2="Weizman Institute of Science" h3="March 2018" h4="Tel Aviv, Israel" />
         
         </div>
 
