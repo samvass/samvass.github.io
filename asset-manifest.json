@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa7c7b66.css",
+    "main.js": "/static/js/main.4e2f5ff1.js",
+    "static/js/787.3058b895.chunk.js": "/static/js/787.3058b895.chunk.js",
+    "static/media/IMG_0255.jpg": "/static/media/IMG_0255.1bea7dc250d7389a1a0a.jpg",
+    "static/media/McGill_University_CoA.svg.png": "/static/media/McGill_University_CoA.svg.f095b658e547f064b2b7.png",
+    "static/media/gov.png": "/static/media/gov.f582f58ca41975607bbb.png",
+    "static/media/phys.png": "/static/media/phys.2decc986943292bb6eab.png",
+    "static/media/sf.png": "/static/media/sf.dc57c0b8e2763c026f2f.png",
+    "static/media/novatek.png": "/static/media/novatek.4057aee257dc4e186ac0.png",
+    "static/media/brain2.png": "/static/media/brain2.4c4c5fe3a3f16fd01cc1.png",
+    "static/media/dawson.png": "/static/media/dawson.dc572aa626e166e5b396.png",
+    "static/media/tamid.png": "/static/media/tamid.13981ff5e56feaab1d40.png",
+    "static/media/book.png": "/static/media/book.bff9a90af881b52d9feb.png",
+    "static/media/deloitte.jpeg": "/static/media/deloitte.c16087f39ba4e9c607ad.jpeg",
+    "index.html": "/index.html",
+    "main.fa7c7b66.css.map": "/static/css/main.fa7c7b66.css.map",
+    "main.4e2f5ff1.js.map": "/static/js/main.4e2f5ff1.js.map",
+    "787.3058b895.chunk.js.map": "/static/js/787.3058b895.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa7c7b66.css",
+    "static/js/main.4e2f5ff1.js"
+  ]
+}
