@@ -56,7 +56,7 @@ const Cover = () => {
               color: "#456990",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.3,
               width: 3
             },
             collisions: {

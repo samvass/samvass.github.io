@@ -10,6 +10,7 @@ import {MdWork, MdOutlineArrowUpward} from 'react-icons/md'
 import {BsAwardFill} from 'react-icons/bs'
 import Cover from './components/Cover';
 import Projects from './components/projects/Projects'
+import Achievements from './components/achievements/Achievements'
 import { useState, useEffect } from 'react';
 
 
@@ -97,10 +98,13 @@ function App() {
           <Experience/>
         </div>
 
-        <div style={{paddingTop: '1px'}} id='proj'>
+        <div id='proj'>
           <Projects/>
         </div>
-        <div id='achieve'></div>
+
+        <div id='achieve'>
+          <Achievements/>
+        </div>
 
       </div>
     </div>
