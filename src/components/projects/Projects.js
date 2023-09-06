@@ -19,7 +19,7 @@ const Experience = () => {
 
         <Item image={tamid} imageLink="https://tamidgroup.org/" h1="Director of Technology Consulting" h2="TAMID McGill" h3="Fall 2020 - present" h4="Montreal, Canada" />
 
-        <Item image={ml} imageLink="" h1="Machine Learning Image Labelling Agent" h2="Universitat Autonoma de Barcelona" h3="March 2023 - June 2023" h4="Barcelona, Spain" />
+        <Item image={ml} imageLink="https://github.com/samvass/Image-Labeller/tree/main" h1="Machine Learning Image Labelling Agent" h2="Universitat Autonoma de Barcelona" h3="March 2023 - June 2023" h4="Barcelona, Spain" />
 
         </div>
 
