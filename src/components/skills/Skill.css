@@ -1,0 +1,24 @@
+.skill {
+    display: flex;
+    gap: 10px;
+    background-color: #456990;
+    padding: 10px;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.skill:hover {
+    background-color: #5686ba;
+}

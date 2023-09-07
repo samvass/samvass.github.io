@@ -8,11 +8,14 @@ import headshot from './images/IMG_0255.jpg'
 import {IoSchoolSharp, IoHammerSharp} from 'react-icons/io5'
 import {MdWork, MdOutlineArrowUpward} from 'react-icons/md'
 import {BsAwardFill} from 'react-icons/bs'
+import {BiHeadphone} from 'react-icons/bi'
+import {GiTalk} from 'react-icons/gi'
 import Cover from './components/Cover';
 import Projects from './components/projects/Projects'
 import Achievements from './components/achievements/Achievements'
 import { useState, useEffect } from 'react';
 import './App.css'
+import Skills from './components/skills/Skills';
 
 
 function App() {
@@ -75,22 +78,29 @@ function App() {
             <div onClick={() => {scrollToSection('exp')}}>
               <Box name="Experience" animation="up" delay="0" 
               icon={<MdWork size='50px'/>}/>
-            </div>           
+            </div>
+            <div onClick={() => {scrollToSection('skill')}}>
+              <Box name="Skills" animation="left" delay="0" 
+              icon={<BiHeadphone size='50px'/>}/>
+            </div>            
             <img style={headshotStyle} src={headshot}></img>
             <div onClick={() => {scrollToSection('proj')}}>
-              <Box name="Projects" animation="down" delay="0"
+              <Box name="Projects" animation="right" delay="0"
               icon={<IoHammerSharp size='50px'/>}/>
             </div>
             <div onClick={() => {scrollToSection('achieve')}}>
               <Box name="Achievements" animation="up" delay="0"
               icon={<BsAwardFill size='50px'/>}/>
             </div>
+            <div onClick={() => {scrollToSection('lang')}}>
+              <Box name="Languages" animation="left" delay="0"
+              icon={<GiTalk size='50px'/>}/>
+            </div>
             
         </div>
         <Cover/>
 
-
-        <div style={{marginTop: '100px'}} id='education'>
+        <div style={{marginTop: '200px'}} id='education'>
           <br/>
           <Education/>
         </div>
@@ -100,12 +110,22 @@ function App() {
           <Experience/>
         </div>
 
+        <div style={{marginTop: '100px'}} id='skill'>
+          <br/>
+          <Skills/>
+        </div>
+
         <div id='proj'>
           <br/>
           <Projects/>
         </div>
 
         <div id='achieve'>
+          <br/>
+          <Achievements/>
+        </div>
+
+        <div id='lang'>
           <br/>
           <Achievements/>
         </div>
