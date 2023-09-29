@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.529a456c.css",
-    "main.js": "/static/js/main.f8c5fbd7.js",
+    "main.js": "/static/js/main.01faf029.js",
     "static/js/787.3058b895.chunk.js": "/static/js/787.3058b895.chunk.js",
-    "static/media/IMG_0255.jpg": "/static/media/IMG_0255.1bea7dc250d7389a1a0a.jpg",
+    "static/media/IMG_0255.jpg": "/static/media/IMG_0255.9fca331ff54ca9aebfc0.jpg",
     "static/media/McGill_University_CoA.svg.png": "/static/media/McGill_University_CoA.svg.f095b658e547f064b2b7.png",
     "static/media/LLM.jpeg": "/static/media/LLM.a3f91827422c2946e927.jpeg",
     "static/media/Python.png": "/static/media/Python.ecfb4e6faf26def45e95.png",
@@ -18,11 +18,11 @@
     "static/media/deloitte.jpeg": "/static/media/deloitte.c16087f39ba4e9c607ad.jpeg",
     "index.html": "/index.html",
     "main.529a456c.css.map": "/static/css/main.529a456c.css.map",
-    "main.f8c5fbd7.js.map": "/static/js/main.f8c5fbd7.js.map",
+    "main.01faf029.js.map": "/static/js/main.01faf029.js.map",
     "787.3058b895.chunk.js.map": "/static/js/787.3058b895.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.529a456c.css",
-    "static/js/main.f8c5fbd7.js"
+    "static/js/main.01faf029.js"
   ]
 }
