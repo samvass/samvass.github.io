@@ -1,0 +1,46 @@
+{
+    "workExperience": [
+        {
+          "title": "Morgan Stanley",
+          "subtitle":"Technology Analyst Intern",
+          "imgSrc": "/morgan.png",
+          "description": "FIXME",
+          "date": "2020-2024",
+          "imgSecondarySrc": "/morgan-second.png"
+        },
+        {
+          "title": "Dialogue",
+          "subtitle":"Software Engineering Intern",
+          "imgSrc": "/dialogue.png",
+          "description": "FIXME",
+          "date": "2020-2024",
+          "imgSecondarySrc": "/dialogue-second.png"
+        },
+        {
+          "title": "Deloitte",
+          "subtitle":"Solutions Associate Intern",
+          "imgSrc": "/deloitte.png",
+          "description": "FIXME",
+          "date": "2020-2024",
+          "imgSecondarySrc": "/deloitte-second.png"
+        },
+        {
+          "title": "Novatek",
+          "subtitle":"Software Engineering Intern",
+          "imgSrc": "/novatek.png",
+          "description": "FIXME",
+          "date": "2020-2024",
+          "imgSecondarySrc": "/novatek-second.png"
+        }
+      ],
+    "projects": [
+        {
+          "title": "Capstone",
+          "subtitle":"FIXME",
+          "imgSrc": "",
+          "description": "",
+          "date": "2020-2024",
+          "imgSecondarySrc": ""
+        }
+      ]
+}
