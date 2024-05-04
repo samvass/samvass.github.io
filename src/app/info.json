@@ -42,5 +42,14 @@
           "date": "2020-2024",
           "imgSecondarySrc": ""
         }
-      ]
+      ],
+    "tabs": [
+      "Work Experience",
+      "Projects"
+    ],
+    "socialLinks": {
+      "github": "",
+      "linkedin": "",
+      "email": ""
+    }
 }

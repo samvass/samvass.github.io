@@ -3,15 +3,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/app/components/ui/dialog"
-
 
 export interface Item {
   title: string
@@ -63,9 +54,6 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-
-          <Dialog>
-          <DialogTrigger>
             <Card
               onClick={() => handleCardClick(item)}
             >
@@ -79,28 +67,6 @@ export const HoverEffect = ({
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.subtitle}</CardDescription>
             </Card>
-          </DialogTrigger>
-          <DialogContent>
-          <DialogHeader>
-              <DialogTitle>
-                {item.title}
-                <br/>
-                <br/>
-                {item.date}  
-              </DialogTitle>
-              <DialogDescription>
-                {item.description}
-                {<Image
-                height={400}
-                width={700}
-                src={item.imgSecondarySrc}
-                alt={"secondaryImg"}
-                className="object-cover object-center rounded-md h-30 w-700 my-20"
-                />}   
-              </DialogDescription>
-          </DialogHeader>
-          </DialogContent>
-          </Dialog>
         </div>
       ))}
     </div>
