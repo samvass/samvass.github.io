@@ -1,4 +1,3 @@
-import { useMemo, useState } from "react";
 import { CardHoverEffectCustom } from "../components/card-hover-effect-custom";
 import { workExperience, projects } from "@/app/info.json"
 
@@ -23,7 +22,7 @@ const textGradient = {
 export const CardList = ({title, cardType}: CardListProps) => {
 
     return (
-        <div>
+        <div className="scroll-mt-20 transition duration-500">
             <div className="px-4 lg:text-4xl font-bold text-neutral-700 max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto mt-6">
                 <span style={textGradient}>{title}</span>
             </div>

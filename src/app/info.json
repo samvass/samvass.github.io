@@ -5,32 +5,36 @@
           "subtitle":"Technology Analyst Intern",
           "imgSrc": "/morgan.png",
           "description": "FIXME",
-          "date": "2020-2024",
-          "imgSecondarySrc": "/morgan-second.png"
+          "date": "May 2024 - Aug 2024",
+          "imgSecondarySrc": "/morgan-second.png",
+          "tags": ["TBD"]
         },
         {
           "title": "Dialogue",
           "subtitle":"Software Engineering Intern",
           "imgSrc": "/dialogue.png",
           "description": "FIXME",
-          "date": "2020-2024",
-          "imgSecondarySrc": "/dialogue-second.png"
-        },
-        {
-          "title": "Deloitte",
-          "subtitle":"Solutions Associate Intern",
-          "imgSrc": "/deloitte.png",
-          "description": "FIXME",
-          "date": "2020-2024",
-          "imgSecondarySrc": "/deloitte-second.png"
+          "date": "Jan 2024 - Apr 2024",
+          "imgSecondarySrc": "/dialogue-second.png",
+          "tags": ["Typescript", "React Native", "Python", "FastAPI", "SQL"]
         },
         {
           "title": "Novatek",
           "subtitle":"Software Engineering Intern",
           "imgSrc": "/novatek.png",
           "description": "FIXME",
-          "date": "2020-2024",
-          "imgSecondarySrc": "/novatek-second.png"
+          "date": "Jul 2023 - Sep 2023",
+          "imgSecondarySrc": "/novatek-second.png",
+          "tags": ["Python", "SQL"]
+        },
+        {
+          "title": "Deloitte",
+          "subtitle":"Solutions Associate Intern",
+          "imgSrc": "/deloitte.png",
+          "description": "FIXME",
+          "date": "May 2022 - Aug 2022",
+          "imgSecondarySrc": "/deloitte-second.png",
+          "tags": ["Salesforce", "LWC", "Apex", "SOQL"]
         }
       ],
     "projects": [
@@ -40,7 +44,8 @@
           "imgSrc": "",
           "description": "",
           "date": "2020-2024",
-          "imgSecondarySrc": ""
+          "imgSecondarySrc": "",
+          "tags": []
         }
       ],
     "tabs": [
@@ -48,8 +53,8 @@
       "Projects"
     ],
     "socialLinks": {
-      "github": "",
-      "linkedin": "",
+      "github": "https://github.com/samvass",
+      "linkedin": "https://www.linkedin.com/in/samuel-ryan-vasserman-279299200/",
       "email": ""
     }
 }

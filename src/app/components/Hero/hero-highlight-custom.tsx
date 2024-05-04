@@ -25,8 +25,6 @@ export function HeroHighlightCustom() {
         </Highlight>
         <div className="md:text-lg lg:text-2xl text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto">
           <br />A Software Engineer from Montreal 🇨🇦
-          <br />
-          <br />Please enjoy my website to learn more about what I've done!
         </div>
       </motion.h1>
       

@@ -5,23 +5,46 @@ import { tabs, socialLinks } from '@/app/info.json';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
-export function NavbarMenu() {
+export function NavbarMenu({ 
+  workExperienceRef,
+  projectsRef
+} : 
+  {workExperienceRef: any, projectsRef: any}) {
 
   const onTabClick = (tabName: string) => {
-    // scroll to that section
+    let ref = null
+    switch(tabName){
+      
+      case "Work Experience":
+        ref = workExperienceRef
+        break
+      
+      case "Projects":
+        ref = projectsRef
+        break
+    }
+
+    ref?.current.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'nearest',
+  });
+
   }
 
   const onSocialClick = (social: string) => {
     const link = (socialLinks as any)[social]
-    //forward the user to that link
+    window.open(link, '_blank');
   }
 
   return (
-    <div className="rounded-full h-20 w-3/4 border-4 bg-gradient-to-r from-indigo-500 to-purple-500 mb-10 grid grid-flow-row-dense grid-cols-4">
+    <div className="rounded-full h-20 w-3/4 bg-black mb-10 
+    max-w-fit	
+    grid grid-flow-row-dense grid-cols-4 z-20">
       <div className="col-span-3 flex justify-start">
         {tabs.map((tab, idx) => {
           return (
-            <Tab key={idx} onClick={() => onTabClick(tab)}>
+            <Tab key={idx} onClick={() => onTabClick(tab)} gradientEnabled={true}>
               {tab}
             </Tab>
           )
@@ -42,9 +65,20 @@ export function NavbarMenu() {
   );
 }
 
-const Tab = ({ children, onClick }: {children: any, onClick: () => void}) => {
+const textGradient = {
+  backgroundImage: "linear-gradient(to right, #667eea, #764ba2)",
+  WebkitBackgroundClip: "text",
+  color: "transparent",
+  backgroundClip: "text"
+};
+
+const Tab = ({ children, onClick, gradientEnabled }: {children: any, onClick: () => void, gradientEnabled?: boolean}) => {
   return (
-    <button className="p-5 text-2xl mx-4 bg-transparent font-bold transform hover:-translate-y-2 transition duration-400" onClick={onClick}>
+    <button 
+      style={gradientEnabled ? textGradient : undefined} 
+      className="p-2 text-2xl mx-4 bg-transparent font-bold transform 
+      hover:-translate-y-2 transition duration-400"
+      onClick={onClick}>
       {children}
     </button>
   );
