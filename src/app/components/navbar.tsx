@@ -7,9 +7,10 @@ import { MdOutlineMail } from "react-icons/md";
 
 export function NavbarMenu({ 
   workExperienceRef,
-  projectsRef
+  projectsRef,
+  educationRef
 } : 
-  {workExperienceRef: any, projectsRef: any}) {
+  {workExperienceRef: any, projectsRef: any, educationRef: any}) {
 
   const onTabClick = (tabName: string) => {
     let ref = null
@@ -21,6 +22,10 @@ export function NavbarMenu({
       
       case "Projects":
         ref = projectsRef
+        break
+      
+      case "Education":
+        ref = educationRef
         break
     }
 

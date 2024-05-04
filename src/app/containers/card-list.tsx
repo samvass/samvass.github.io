@@ -1,9 +1,10 @@
 import { CardHoverEffectCustom } from "../components/card-hover-effect-custom";
-import { workExperience, projects } from "@/app/info.json"
+import { workExperience, projects, education } from "@/app/info.json"
 
 export enum CardType{
     workExperience,
-    projects
+    projects,
+    education
 }
 
 interface CardListProps {

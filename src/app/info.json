@@ -39,18 +39,38 @@
       ],
     "projects": [
         {
-          "title": "Capstone",
-          "subtitle":"FIXME",
-          "imgSrc": "",
-          "description": "",
-          "date": "2020-2024",
+          "title": "Engineering Capstone",
+          "subtitle":"LLM Generated Article Detector",
+          "imgSrc": "/mcgill.png",
+          "description": "FIXME",
+          "date": "Sep 2023 - Apr 2024",
+          "imgSecondarySrc": "/capstone-second.png",
+          "tags": ["Pytorch", "BeautifulSoup", "XGBoost"]
+        },
+        {
+          "title": "Health Lens",
+          "subtitle":"Dialogue Hackathon Winner",
+          "imgSrc": "/healthlens.png",
+          "description": "FIXME",
+          "date": "Sep 2023 - Apr 2024",
           "imgSecondarySrc": "",
-          "tags": []
+          "tags": ["Python", "FastAPI", "Llama", "React Native"]
         }
       ],
+    "education": {
+      "bachelors": {
+        "school": "McGill University",
+        "title": "BEng of Software Engineering",
+        "date": "Sep 2020 - Dec 2024",
+        "gpa": "3.96/4.0",
+        "imgSrc": "",
+        "courses": []
+      }
+    },
     "tabs": [
       "Work Experience",
-      "Projects"
+      "Projects",
+      "Education"
     ],
     "socialLinks": {
       "github": "https://github.com/samvass",

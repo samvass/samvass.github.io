@@ -24,11 +24,11 @@ export const HoverEffect = ({
   handleCardClick: (item: Item) => void;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+  
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-10",
+        "flex flex-direction-horizontal py-10",
         className
       )}
     >
@@ -41,7 +41,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-slate-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-indigo-500/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -81,14 +81,15 @@ export const Card = ({
 }: {
   className?: string;
   children: React.ReactNode;
-  onClick: () => void
+  onClick?: () => void
 }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent border-white/[0.2] group-hover:border-slate-700 relative z-20 cursor-pointer",
+        "rounded-2xl p-4 overflow-hidden bg-black border-4 border-transparent border-white/[0.2] group-hover:border-slate-700 relative z-20 cursor-pointer",
         className
       )}
+      style={{ width: "200px", height: "300px" }}
       onClick={onClick}
     >
       <div className="relative z-50">
