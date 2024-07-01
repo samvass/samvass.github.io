@@ -25,7 +25,7 @@ export function HeroHighlightCustom() {
         <div className="text-center md:text-left">
           <div className="text-1xl px-4 md:text-4xl lg:text-5xl font-bold text-white leading-relaxed lg:leading-snug">
             <Highlight className="text-white text-2xl px-4 md:text-4xl lg:text-5xl font-bold leading-relaxed lg:leading-snug whitespace-nowrap">
-              Hi, I'm Sam Vasserman!
+              `Hi, I'm Sam Vasserman!`
             </Highlight>
           </div>
           <div className="md:text-lg lg:text-2xl text-white leading-relaxed lg:leading-snug mt-2 md:mt-4">
