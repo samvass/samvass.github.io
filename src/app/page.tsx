@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 import { HeroHighlightCustom } from "./components/Hero/hero-highlight-custom";
 import { CardList, CardType } from "./containers/card-list";
 import { NavbarMenu } from "./components/navbar";
-import Education from "./containers/education";
+import { CardHoverEffectEducation } from "./components/card-hover-education";
 
 // @ts-ignore
 import AOS from "aos";

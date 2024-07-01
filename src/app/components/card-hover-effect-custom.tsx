@@ -16,7 +16,7 @@ export function CardHoverEffectCustom({items}: CardHoverEffectCustomProps) {
     title: "",
     subtitle: "",
     imgSrc: "",
-    description: "",
+    description: [""],
     date: "",
     imgSecondarySrc: "",
     tags: [],

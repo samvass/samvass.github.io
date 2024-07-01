@@ -55,7 +55,7 @@ export function NavbarMenu({
           )
         })}
       </div>
-      <div className="flex justify-around">
+      <div className="flex">
         <Tab onClick={() => onSocialClick("github")}>
           <FaGithub />
         </Tab>
@@ -64,6 +64,9 @@ export function NavbarMenu({
         </Tab>
         <Tab onClick={() => onSocialClick("email")}>
           <MdOutlineMail />
+        </Tab>
+        <Tab onClick={() => onSocialClick("CV")}>
+          <span className="text-xl">CV</span>
         </Tab>
       </div>
     </div>

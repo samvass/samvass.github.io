@@ -1,4 +1,5 @@
 import { CardHoverEffectCustom } from "../components/card-hover-effect-custom";
+import { CardHoverEffectEducation } from "../components/card-hover-education";
 import { workExperience, projects, education } from "@/app/info.json"
 
 export enum CardType{
@@ -23,8 +24,8 @@ const textGradient = {
 export const CardList = ({title, cardType}: CardListProps) => {
 
     return (
-        <div className="scroll-mt-20 transition duration-500">
-            <div className="px-4 lg:text-4xl font-bold text-neutral-700 max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto mt-6">
+        <div>
+            <div className="px-4 text-4xl font-bold text-neutral-700 max-w-4xl leading-relaxed leading-snug text-center mx-auto mt-6">
                 <span style={textGradient}>{title}</span>
             </div>
             { cardType === CardType.workExperience && 
@@ -32,6 +33,9 @@ export const CardList = ({title, cardType}: CardListProps) => {
             }
             { cardType === CardType.projects && 
             <CardHoverEffectCustom items={projects} />
+            }
+            { cardType === CardType.education && 
+            <CardHoverEffectEducation items={education} />
             }
         </div>
     );

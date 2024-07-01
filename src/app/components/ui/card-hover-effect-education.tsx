@@ -6,24 +6,21 @@ import { useState } from "react";
 import Image from "next/image";
 
 
-export interface Item {
+export interface EducationItem {
+  school: string
   title: string
-  subtitle: string
-  imgSrc: string
-  description: string[]
   date: string
-  imgSecondarySrc: string
-  tags: string[]
+  gpa: string
+  imgSrc: string
+  courses: string[]
 }
 
 export const HoverEffect = ({
   items,
   className,
-  handleCardClick
 }: {
-  items: Item[];
+  items: EducationItem[];
   className?: string;
-  handleCardClick: (item: Item) => void;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
@@ -36,7 +33,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <div
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -57,9 +54,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-            <Card
-              onClick={() => handleCardClick(item)}
-            >
+            <Card>
               <Image
               height={100}
               width={100}
@@ -68,7 +63,25 @@ export const HoverEffect = ({
               className="object-cover object-top rounded-full h-20 w-20 mb-10"
               />          
               <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.subtitle}</CardDescription>
+              <CardDescription>
+                <div>
+                  {item.school}
+                  <br />
+                  GPA: {item.gpa}
+                  <br />
+                  <br />
+                  {item.date}
+                  <br />
+                  <br />
+                  <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3">
+                  {item.courses.map((course, idx) => {
+                    return (
+                      <span key={idx} className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-indigo-900 text-indigo-300 mr-2 my-2">{course}</span>
+                    )
+                  })}
+                  </div>
+                </div>
+              </CardDescription>
             </Card>
         </div>
       ))}
@@ -79,20 +92,17 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
-  onClick,
 }: {
   className?: string;
   children: React.ReactNode;
-  onClick?: () => void
 }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl p-4 overflow-hidden bg-neutral-950 border-4 border-transparent border-white/[0.2] group-hover:border-slate-700 relative z-20 cursor-pointer",
+        "rounded-2xl p-4 overflow-hidden bg-neutral-950 border-4 border-transparent border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
-      style={{ width: "200px", height: "300px" }}
-      onClick={onClick}
+      style={{ width: "550px", height: "375px" }}
     >
       <div className="relative z-50">
         <div className="p-4">{children}</div>
@@ -123,7 +133,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-2 text-zinc-400 tracking-wide leading-relaxed text-sm flex flex-direction-vertical",
         className
       )}
     >
