@@ -1,3 +1,4 @@
+"use client"
 import { CardHoverEffectCustom } from "../components/card-hover-effect-custom";
 import { CardHoverEffectEducation } from "../components/card-hover-education";
 import { workExperience, projects, education } from "@/app/info.json"

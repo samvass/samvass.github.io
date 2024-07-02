@@ -1,7 +1,6 @@
 'use client';
 
 import { HoverEffect, EducationItem } from "./ui/card-hover-effect-education";
-import { useState } from "react";
 
 interface CardHoverEffectEducationProps{
     items: EducationItem[]

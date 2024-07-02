@@ -13,7 +13,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
         onClick={onClose}
       >
         <div
-          className={`bg-black border-4 rounded-lg shadow-lg p-4 w-1/2 h-5/6 overflow-y-auto ${
+          className={`bg-black border-4 rounded-lg shadow-lg p-4 w-1/2 h-auto overflow-y-auto ${
             isOpen ? 'transition-transform duration-500 transform translate-y-0' : 'transition-transform duration-500 transform translate-y-full'
           }`}
         >

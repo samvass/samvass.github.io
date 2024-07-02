@@ -59,7 +59,7 @@
         },
         {
           "title": "AI Face Roaster",
-          "subtitle":"Dialogue Hackathon Winner",
+          "subtitle":"McGill AI Society Hackathon",
           "imgSrc": "/face-roast.png",
           "description": ["Created a React app that takes a picture of the user and generates a witty 'roast' about their face for a 24 hour hackathon",
           "Trained a computer vision model to analyze the users face and output their most prominent facial features",
@@ -70,9 +70,9 @@
         },
         {
           "title": "Book Club",
-          "subtitle":"Dialogue Hackathon Winner",
+          "subtitle":"Personalized Book Suggestions",
           "imgSrc": "/book-club.jpg",
-          "description": ["FIXME"],
+          "description": ["Designed and implemented a dynamic full-stack website that employs personalized algorithms to offer book recommendations, leveraging users' historical reading patterns and ratings"],
           "date": "Sep 2023 - Apr 2024",
           "imgSecondarySrc": "/book-club-secondary.png",
           "tags": ["Node", "React", "MongoDB"]
@@ -96,6 +96,6 @@
       "github": "https://github.com/samvass",
       "linkedin": "https://www.linkedin.com/in/samuel-ryan-vasserman-279299200/",
       "email": "mailto:samuel-ryan.vasserman@mail.mcgill.ca",
-      "CV": "https://drive.google.com/file/d/1ObIbYBul-DY6r3o3reNDzSrBFbNH62RF/view?usp=sharing"
+      "CV": "https://drive.google.com/file/d/1B9OhQhTwdIjljRKW3O48W14zq3Gqrekb/view?usp=sharing"
     }
 }
