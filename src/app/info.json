@@ -84,7 +84,7 @@
         "date": "Sep 2020 - Dec 2024",
         "gpa": "3.96/4.0",
         "imgSrc": "/mcgill.png",
-        "courses": ["Alogirthm Design", "Datastructures", "Database Systems", "Operating Systems", "Design Principles", "Model Programming"]
+        "courses": ["Algorithm Design", "Data Structures", "Database Systems", "Operating Systems", "Design Principles", "Model Programming"]
       }
     ],
     "tabs": [

@@ -10,6 +10,7 @@ import { CardHoverEffectEducation } from "./components/card-hover-education";
 // @ts-ignore
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import Head from "next/head";
 
 export default function Home() {
 
