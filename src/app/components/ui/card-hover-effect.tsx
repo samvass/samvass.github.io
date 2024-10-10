@@ -26,18 +26,18 @@ export const HoverEffect = ({
   handleCardClick: (item: Item) => void;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  
+
   return (
     <div
       className={cn(
-        "flex flex-direction-horizontal py-10",
+        "grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10", // 2 columns on mobile, 4 on larger screens
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -58,23 +58,22 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-            <Card
-              onClick={() => handleCardClick(item)}
-            >
-              <Image
+          <Card onClick={() => handleCardClick(item)}>
+            <Image
               height={100}
               width={100}
               src={item.imgSrc}
               alt={"logo"}
               className="object-cover object-top rounded-full h-20 w-20 mb-10"
-              />          
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.subtitle}</CardDescription>
-            </Card>
+            />
+            <CardTitle>{item.title}</CardTitle>
+            <CardDescription>{item.subtitle}</CardDescription>
+          </Card>
         </div>
       ))}
     </div>
-  );
+  );  
+
 };
 
 export const Card = ({
