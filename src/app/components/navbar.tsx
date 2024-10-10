@@ -43,33 +43,36 @@ export function NavbarMenu({
   }
 
   return (
-    <div className="rounded-full h-20 w-3/4 bg-black mb-10 
-    max-w-fit	
-    grid grid-flow-row-dense grid-cols-4 z-20">
-      <div className="col-span-3 flex justify-start">
-        {tabs.map((tab, idx) => {
-          return (
-            <Tab key={idx} onClick={() => onTabClick(tab)} gradientEnabled={true}>
-              {tab}
-            </Tab>
-          )
-        })}
-      </div>
-      <div className="flex">
-        <Tab onClick={() => onSocialClick("github")}>
-          <FaGithub />
-        </Tab>
-        <Tab onClick={() => onSocialClick("linkedin")}>
-          <FaLinkedin />
-        </Tab>
-        <Tab onClick={() => onSocialClick("email")}>
-          <MdOutlineMail />
-        </Tab>
-        <Tab onClick={() => onSocialClick("CV")}>
-          <span className="text-xl">CV</span>
-        </Tab>
-      </div>
+    <div className="rounded-full h-auto w-full md:w-3/4 bg-black mb-10 max-w-fit grid grid-cols-1 md:grid-cols-3 gap-4 z-20 p-4">
+    {/* Tabs Section: Stacked on mobile, row on larger screens */}
+    <div className="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start mb-4 md:mb-0">
+      {tabs.map((tab, idx) => (
+        <div key={idx} className="min-w-[100px]">
+          <Tab onClick={() => onTabClick(tab)} gradientEnabled={true}>
+            {tab}
+          </Tab>
+        </div>
+      ))}
     </div>
+
+    {/* Social Section: Dropping to a new row on medium width */}
+    <div className="col-span-1 md:col-span-3 flex justify-center space-x-4">
+      <Tab onClick={() => onSocialClick("github")}>
+        <FaGithub />
+      </Tab>
+      <Tab onClick={() => onSocialClick("linkedin")}>
+        <FaLinkedin />
+      </Tab>
+      <Tab onClick={() => onSocialClick("email")}>
+        <MdOutlineMail />
+      </Tab>
+      <Tab onClick={() => onSocialClick("CV")}>
+        <span className="text-xl">CV</span>
+      </Tab>
+    </div>
+  </div>
+
+ 
   );
 }
 
